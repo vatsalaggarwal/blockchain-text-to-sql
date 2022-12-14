@@ -1,5 +1,15 @@
 # CryptoInsight (Blockchain/Text->SQL)
 
+
+NOTE: The code may not work, and we take no responsibility for the code and its effects in any way. 
+
+<p align="center">
+    <a href="https://www.loom.com/share/b5400afcb0e049e8a74dc6a473f0ad7d"><img src="https://img.shields.io/badge/Loom-Demo-red"></a>
+    <a href="https://www.llmhub.com/2/functions/23/share"><img src="https://img.shields.io/badge/LLMHub%20-%E2%AD%90%EF%B8%8F-brightgreen" alt="LLMHub"></a>
+</p>
+
+## Overview
+
 Bitcoin is ~400 GB of data, and Ethereum is at 1 Terabyte. If the number of transactions on the blockchain starts to match that on VISA, we’re looking at ~350GB PER DAY. At these scales, it doesn’t matter if we’ve built “open databases”, for all intents and purposes these will be closed off for most people. We’ve built theoretically open finance, but not practically open.
 
 But, we’ve noticed this problem already with the scales of data that exist even today. A web3 company that we shared office space with had the exact same problem.
@@ -7,8 +17,6 @@ But, we’ve noticed this problem already with the scales of data that exist eve
 So, in October, @sidroopdaska and I (@vatsalaggarwal) sat down and built out a hacky MVP over the weekend. We called it the “Webflow for web3 dashboards”. The idea was to make creating web3 dashboards like https://info.uniswap.org/#/ or https://dune.com/anngel/XDAO-Statistics as “no-code” as possible. This meant: i) easy UI to create charts and place them, ii) for each component/chart, being able to populate the data using “natural language” (we used large language models to convert text-to-SQL).
 
 You can find a demo at: https://www.loom.com/share/b5400afcb0e049e8a74dc6a473f0ad7d. This code opensources this demo.
-
-## Further Learnings
 
 On the way, we realised the problem was much deeper than that - we ran into the following: i) data availability: time to “access data” from the most recent block created on the chain, ii) data quality: how well is the data structured to be able to do something meaningful with it (usually the result of doing ETL on raw data to create “tables” that relate to certain tasks downstream users might want to perform), iii) intelligence/BI: how easy is it to get answers to specific questions someone has.
 
@@ -27,11 +35,6 @@ In summary,
 - Not lock users in - build open interfaces, but keep solving downstream painpoints they’ve in an open way, so there is no need for them to leave!
 
 If you’re solving any of these problems, I hope this helps you.
-
-# Overview
-
-NOTE: The code may not work, and we take no responsibility for the code and its effects in any way.
-
 ## Usage
 
 ```bash
@@ -39,7 +42,7 @@ python server/main.py &
 npm start
 ```
 
-## Installing
+### Installing
 
 EC2:
 ```bash
@@ -52,9 +55,9 @@ After this, run `make setup`. Note due to error in activate conda environments v
 step would have to be done manually at the moment.
 
 
-# References
+## References
 
-## Data ETL
+### Data ETL
 1. Flipside
     - https://docs.flipsidecrypto.com/shroomdk-sdk/python
     - https://sdk.flipsidecrypto.xyz/shroomdk/apikeys
