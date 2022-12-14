@@ -8,6 +8,8 @@ NOTE: The code may not work, and we take no responsibility for the code and its 
     <a href="https://www.llmhub.com/2/functions/23/share"><img src="https://img.shields.io/badge/LLMHub%20-%E2%AD%90%EF%B8%8F-brightgreen" alt="LLMHub"></a>
 </p>
 
+[Open-Source Prompt](https://www.llmhub.com/2/functions/23/share)
+
 ## Overview
 
 Bitcoin is ~400 GB of data, and Ethereum is at 1 Terabyte. If the number of transactions on the blockchain starts to match that on VISA, we’re looking at ~350GB PER DAY. At these scales, it doesn’t matter if we’ve built “open databases”, for all intents and purposes these will be closed off for most people. We’ve built theoretically open finance, but not practically open.
