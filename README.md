@@ -14,8 +14,6 @@ NOTE: The code may not work, and we take no responsibility for the code and its 
 
 Bitcoin is ~400 GB of data, and Ethereum is at 1 Terabyte. If the number of transactions on the blockchain starts to match that on VISA, we’re looking at ~350GB PER DAY. At these scales, it doesn’t matter if we’ve built “open databases”, for all intents and purposes these will be closed off for most people. We’ve built theoretically open finance, but not practically open.
 
-But, we’ve noticed this problem already with the scales of data that exist even today. A web3 company that we shared office space with had the exact same problem.
-
 So, in October, @sidroopdaska and I (@vatsalaggarwal) sat down and built out a hacky MVP over the weekend. We called it the “Webflow for web3 dashboards”. The idea was to make creating web3 dashboards like https://info.uniswap.org/#/ or https://dune.com/anngel/XDAO-Statistics as “no-code” as possible. This meant: i) easy UI to create charts and place them, ii) for each component/chart, being able to populate the data using “natural language” (we used large language models to convert text-to-SQL).
 
 You can find a demo at: https://www.loom.com/share/b5400afcb0e049e8a74dc6a473f0ad7d. This code opensources this demo.
